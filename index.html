@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Marketplace</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to our candle shop!</h2><br>
+    <h3>Please choose which candle you would like to buy:</h3>
+    <h4>All candles are $10 before discount</h4><br>
+
+    <form id="purchase-form">
+      <div class="form-group">
+        <label>
+          <input type="radio" name="scent" value="pumpkin" checked>
+          Pumpkin Spice: <p class="dis">10% Discount</p>
+        </label><br>
+        <label>
+          <input type="radio" name="scent" value="pine">
+          Pine: <p class="dis">20% Discount</p>
+        </label><br>
+        <label>
+          <input type="radio" name="scent" value="rain">
+          Summer Rain: <p class="dis">30% Discount</p>
+        </label>
+      </div>
+  
+    <h3>Please enter your shipping and payment information</h3>
+  
+      <div class="form-group">
+        <label for="shipping">Shipping Address:</label>
+        <input id="shipping" type="text" name="shipping"><br>
+        <label for="payment">Payment Method</label>
+        <input id="payment" type="text" name="payment"><br>
+      </div>
+      <button type="submit" class="btn">Pay Now</button>
+    </form>
+    <!-- <div class="hidden"> -->
+    <h3>Receipt</h3>
+    <p id="output"></p>
+    <!-- </div> -->
+  </div>
+</body>
+</html>
